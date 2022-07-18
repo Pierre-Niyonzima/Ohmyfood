@@ -161,6 +161,7 @@
   justify-content: space-between;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 15px;
 }
 .container_information :nth-child(1n) {
   margin: 0;
@@ -178,6 +179,10 @@
   align-items: center;
   animation: slide-left 0.5s ease;
   transform-origin: right;
+}
+
+.price {
+  font-weight: bolder;
 }
 
 .hero_button {

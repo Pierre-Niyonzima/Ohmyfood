@@ -192,6 +192,7 @@ $gradient: linear-gradient(
     justify-content: space-between;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 15px;
 
     & :nth-child(1n) {
       margin: 0;
@@ -213,6 +214,10 @@ $gradient: linear-gradient(
       transform-origin: right;
     }
   }
+}
+
+.price {
+  font-weight: bolder;
 }
 
 .hero_button {
