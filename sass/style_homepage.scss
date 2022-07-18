@@ -94,46 +94,6 @@ $gradient: linear-gradient(
   }
 }
 
-// spinner keyframes
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes text-color {
-  0% {
-    color: rgba(0, 0, 0, 1);
-  }
-
-  50% {
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  100% {
-    color: rgba(0, 0, 0, 0.1);
-  }
-}
-
-@keyframes spinner {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.9;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-
 header {
   @include center;
   width: 100%;
@@ -302,9 +262,6 @@ header {
   &:hover {
     transition: 0.5s;
     transform: scale(1.02);
-    .restaurant_info-card {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -316,7 +273,7 @@ header {
   width: 100%;
   height: 100px;
   border-radius: 0 0 20px 20px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
 
   &-card {
@@ -405,6 +362,46 @@ header {
         font-size: 15px;
       }
     }
+  }
+}
+
+// spinner keyframes
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-color {
+  0% {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  50% {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
   }
 }
 

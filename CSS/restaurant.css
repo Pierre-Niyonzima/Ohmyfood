@@ -169,7 +169,7 @@
   overflow: hidden;
 }
 .container:hover .price {
-  margin-left: 0px;
+  margin-left: 15px;
   padding-right: 70px;
   transition: 0.5s ease;
 }
@@ -206,6 +206,48 @@
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  padding-top: 20px;
+}
+.footer .logo {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 30px 0 20px 70px;
+  font-size: 50px;
+  font-family: "Shrikhand";
+}
+.footer_display {
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer_display-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer_display-link {
+  display: flex;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.footer_display-link:hover .footer_display-link_title {
+  text-decoration: underline;
+}
+.footer_display-link i {
+  margin-right: 10px;
+}
+.footer_display-link_title {
+  font-size: 15px;
 }
 
 @keyframes slide-left {
@@ -266,48 +308,6 @@
 
 #case-9 {
   animation-delay: 0.9s;
-}
-
-.footer {
-  width: 100%;
-  background-color: #353535;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: block;
-  padding-top: 20px;
-}
-.footer .logo {
-  color: rgb(255, 255, 255);
-  width: 100%;
-  padding: 30px 0 20px 70px;
-  font-size: 50px;
-  font-family: "Shrikhand";
-}
-.footer_display {
-  padding: 20px 40px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.footer_display-links {
-  display: flex;
-  flex-direction: column;
-}
-.footer_display-link {
-  display: flex;
-  color: white;
-  height: 30px;
-  cursor: pointer;
-}
-.footer_display-link:hover .footer_display-link_title {
-  text-decoration: underline;
-}
-.footer_display-link i {
-  margin-right: 10px;
-}
-.footer_display-link_title {
-  font-size: 15px;
 }
 
 @media screen and (min-width: 1000px) {

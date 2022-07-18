@@ -193,7 +193,6 @@ $gradient: linear-gradient(
     white-space: nowrap;
     overflow: hidden;
     font-size: 15px;
-
     & :nth-child(1n) {
       margin: 0;
       text-overflow: ellipsis;
@@ -203,7 +202,7 @@ $gradient: linear-gradient(
 
   &:hover {
     .price {
-      margin-left: 0px;
+      margin-left: 15px;
       padding-right: 70px;
       transition: 0.5s ease;
     }
@@ -232,69 +231,6 @@ $gradient: linear-gradient(
   &:hover {
     @include button-hover;
   }
-}
-// keyfarmes
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(-50px);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#case-1 {
-  animation-delay: 0.1s;
-}
-
-#case-2 {
-  animation-delay: 0.2s;
-}
-
-#case-3 {
-  animation-delay: 0.3s;
-}
-
-#case-4 {
-  animation-delay: 0.4s;
-}
-
-#case-5 {
-  animation-delay: 0.5s;
-}
-
-#case-6 {
-  animation-delay: 0.6s;
-}
-
-#case-7 {
-  animation-delay: 0.7s;
-}
-
-#case-8 {
-  animation-delay: 0.8s;
-}
-
-#case-9 {
-  animation-delay: 0.9s;
 }
 
 .footer {
@@ -340,6 +276,41 @@ $gradient: linear-gradient(
         font-size: 15px;
       }
     }
+  }
+}
+
+// keyframes
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(-50px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//For loop
+@for $i from 0 through 8 {
+  #case-#{$i + 1} {
+    animation-delay: 0.1s + $i * 0.1s;
   }
 }
 
