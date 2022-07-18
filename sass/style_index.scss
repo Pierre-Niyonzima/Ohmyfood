@@ -307,7 +307,6 @@ header {
 .empty {
   width: 50px;
   position: relative;
-
   &:hover {
     opacity: 0;
     transition: 0.5s;
@@ -326,6 +325,8 @@ header {
     font-size: 50px;
     padding-bottom: 20px;
     font-family: "Shrikhand";
+    width: 270px;
+    margin: auto;
   }
 
   &_frame {
