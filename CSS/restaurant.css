@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  z-index: 10;
+  background: white;
+  width: 100%;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.header_arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35px;
+  top: 40%;
+  font-size: 20px;
+}
+.header_arrow a {
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  zoom: 50%;
+}
+
+.img {
+  width: 100%;
+  height: 50vh;
+}
+.img_image {
+  margin-top: -80px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#menu {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_container {
+  margin-top: -200px;
+  padding: 20px 20px;
+  width: 100%;
+  position: relative;
+  max-width: 1200px;
+  border-radius: 30px 30px 0 0;
+  background: #f0f0f0;
+}
+
+.menu_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_header_title {
+  font-size: 25px;
+  font-family: "Shrikhand";
+}
+.menu_header_heart .heart {
+  width: 30px;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+.menu_header_heart .shape {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+.menu_header_heart .full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+.menu_header_heart .empty {
+  width: 30px;
+  position: relative;
+}
+.menu_header_heart .empty:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.dish {
+  margin-top: 30px;
+  padding-top: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dish_type {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background: #99e2d0;
+}
+
+.appear {
+  animation: opacity 1s both;
+}
+
+.check_box {
+  display: none;
+  position: absolute;
+  background: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  width: 70px;
+  height: 100%;
+  animation: slide-left 0.5s ease;
+}
+.check_box i {
+  font-size: 30px;
+  color: white;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
+}
+
+.container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  border-radius: 15px;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px 20px;
+  box-shadow: 2px 0px 10px 2px rgba(0, 0, 0, 0.15);
+}
+.container_information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.container_information :nth-child(1n) {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container:hover .price {
+  margin-left: 0px;
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.container:hover .check_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-left 0.5s ease;
+  transform-origin: right;
+}
+
+.hero_button {
+  opacity: 1;
+  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.hero_button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(-50px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#case-1 {
+  animation-delay: 0.1s;
+}
+
+#case-2 {
+  animation-delay: 0.2s;
+}
+
+#case-3 {
+  animation-delay: 0.3s;
+}
+
+#case-4 {
+  animation-delay: 0.4s;
+}
+
+#case-5 {
+  animation-delay: 0.5s;
+}
+
+#case-6 {
+  animation-delay: 0.6s;
+}
+
+#case-7 {
+  animation-delay: 0.7s;
+}
+
+#case-8 {
+  animation-delay: 0.8s;
+}
+
+#case-9 {
+  animation-delay: 0.9s;
+}
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  padding-top: 20px;
+}
+.footer .logo {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 30px 0 20px 70px;
+  font-size: 50px;
+  font-family: "Shrikhand";
+}
+.footer_display {
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer_display-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer_display-link {
+  display: flex;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.footer_display-link:hover .footer_display-link_title {
+  text-decoration: underline;
+}
+.footer_display-link i {
+  margin-right: 10px;
+}
+.footer_display-link_title {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+  .dish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dish_type {
+    width: 31%;
+  }
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer_display-links {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=restaurant.css.map */
