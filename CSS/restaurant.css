@@ -222,7 +222,7 @@
   font-size: 50px;
   font-family: "Shrikhand";
   width: 270px;
-  margin: auto;
+  margin-left: 80px;
 }
 .footer_display {
   padding: 20px 40px;
@@ -323,6 +323,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
   }
   .footer .footer_display-links {
     width: 70%;

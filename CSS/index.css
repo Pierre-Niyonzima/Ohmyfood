@@ -300,10 +300,8 @@ header {
 .footer .logo {
   color: rgb(255, 255, 255);
   font-size: 50px;
-  padding-bottom: 20px;
   font-family: "Shrikhand";
   width: 270px;
-  margin: auto;
 }
 .footer_frame {
   width: 100%;
@@ -375,6 +373,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
   }
   .footer .footer_display-links {
     margin: auto;

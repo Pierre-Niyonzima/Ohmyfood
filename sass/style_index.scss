@@ -323,10 +323,8 @@ header {
   .logo {
     color: rgb(255, 255, 255);
     font-size: 50px;
-    padding-bottom: 20px;
     font-family: "Shrikhand";
     width: 270px;
-    margin: auto;
   }
 
   &_frame {
@@ -411,6 +409,7 @@ header {
   .footer {
     .logo {
       @include center;
+      margin: auto;
     }
     .footer_display-links {
       margin: auto;

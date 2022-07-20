@@ -242,11 +242,10 @@ $gradient: linear-gradient(
 
   .logo {
     color: rgb(255, 255, 255);
-
     font-size: 50px;
     font-family: "Shrikhand";
     width: 270px;
-    margin: auto;
+    margin-left: 80px;
   }
 
   &_display {
@@ -330,6 +329,7 @@ $gradient: linear-gradient(
   .footer {
     .logo {
       @include center;
+      margin: auto;
     }
     .footer_display-links {
       width: 70%;
